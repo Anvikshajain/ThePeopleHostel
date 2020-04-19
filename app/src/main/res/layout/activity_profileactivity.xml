@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileactivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#68BB59"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_imageview"
+            android:layout_width="306dp"
+            android:layout_height="134dp"
+            android:contentDescription="@string/profile_image"
+            android:src="@drawable/profile"
+            app:civ_border_color="#3f51b5"
+            app:civ_border_width="4dp"
+            app:civ_shadow="false"
+            app:civ_shadow_color="#3f51b5"
+            app:civ_shadow_radius="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.347" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="102dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/username1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_imageview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="415dp"
+        android:layout_height="528dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/img_mail"
+            android:layout_width="85dp"
+            android:layout_height="57dp"
+            android:contentDescription="@string/img_mail"
+            android:src="@drawable/ic_mail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <TextView
+            android:id="@+id/et_mail"
+            android:layout_width="194dp"
+            android:layout_height="57dp"
+            android:text="@string/e_mail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/img_mail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14" />
+
+        <Button
+            android:id="@+id/editprofile_button"
+            android:layout_width="176dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/btn_round"
+            android:text="@string/edit_profile"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_changepassword"
+            android:layout_width="176dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/btn_round"
+            android:text="@string/change_password"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/editprofile_button" />
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="85dp"
+            android:layout_height="57dp"
+            android:contentDescription="@string/img_phone"
+            android:src="@drawable/ic_phoneno"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_mail"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <ImageView
+            android:id="@+id/img_enrno"
+            android:layout_width="85dp"
+            android:layout_height="57dp"
+            android:contentDescription="@string/img_enrollno"
+            android:src="@drawable/ic_rollno"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_phone"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <ImageView
+            android:id="@+id/img_roomno"
+            android:layout_width="85dp"
+            android:layout_height="57dp"
+            android:contentDescription="@string/img_roomno"
+            android:src="@drawable/ic_room"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_enrno"
+            app:layout_constraintVertical_bias="0.094" />
+
+        <TextView
+            android:id="@+id/et_phone"
+            android:layout_width="194dp"
+            android:layout_height="57dp"
+            android:text="@string/phone_no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/img_phone"
+            app:layout_constraintTop_toBottomOf="@+id/et_mail"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <TextView
+            android:id="@+id/et_enrno"
+            android:layout_width="194dp"
+            android:layout_height="57dp"
+            android:text="@string/enrollment_no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/img_enrno"
+            app:layout_constraintTop_toBottomOf="@+id/et_phone"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <TextView
+            android:id="@+id/et_roomno"
+            android:layout_width="194dp"
+            android:layout_height="57dp"
+            android:text="@string/room_no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toEndOf="@+id/img_roomno"
+            app:layout_constraintTop_toBottomOf="@+id/et_enrno"
+            app:layout_constraintVertical_bias="0.094" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

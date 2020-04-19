@@ -1,0 +1,2 @@
+rootProject.name='The People Hostel'
+include ':app'

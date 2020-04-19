@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "274294198142",
+    "firebase_url": "https://the-people-hostel.firebaseio.com",
+    "project_id": "the-people-hostel",
+    "storage_bucket": "the-people-hostel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274294198142:android:fd39126beee45b5265ed2f",
+        "android_client_info": {
+          "package_name": "com.example.thepeoplehostel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274294198142-03hep04idlihmqilsd2sg45r9mjatpge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyeqIR85uhviTj5I_7crb-azQnYukS80c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274294198142-03hep04idlihmqilsd2sg45r9mjatpge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

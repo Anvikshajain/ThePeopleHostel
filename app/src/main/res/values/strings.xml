@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">The People Hostel</string>
+    <string name="todo">TODO</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="login">Login</string>
+    <string name="e_resetmail">Reset E-Mail</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enrollment_id">Enrollment ID</string>
+    <string name="branch">Branch</string>
+    <string name="logo_logout">logout_btn</string>
+    <string name="logo_homeprofile">logo_homeprofile</string>
+    <string name="logo_profile">logo_profile</string>
+    <string name="logo_settings">logo_settings</string>
+    <string name="logo_fees">logo_fees</string>
+    <string name="logo_navigate">logo_navigate</string>
+    <string name="register_profile">register_profile</string>
+    <string name="room_no">Room No</string>
+    <string name="name">Name</string>
+    <string name="enrollment_no">Enrollment No</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="phone_no">Phone No</string>
+    <string name="college">College</string>
+    <string name="register">Register</string>
+    <string name="new_one_register">New One?Register</string>
+    <string name="et_password">Password</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="this_is_profile_activity">This is profile activity</string>
+    <string name="this_is_fees_activity">This is fees activity</string>
+    <string name="map_key" translatable="false">AIzaSyCyeqIR85uhviTj5I_7crb-azQnYukS80c</string>
+    <string name="username1">UserName</string>
+    <string name="profile_image">profile_image</string>
+    <string name="img_mail">profile_mail</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="img_phone">profile_phone</string>
+    <string name="img_enrollno">profile_enrollno</string>
+    <string name="img_roomno">profile_roomno</string>
+    <string name="up_password">Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="up_profile">up_profile</string>
+    <string name="up_name">Name</string>
+    <string name="up_phone">Phone</string>
+    <string name="up_room_no">Room No</string>
+    <string name="update">Update</string>
+    <string name="date">Date</string>
+    <string name="no_of_persons">No. of Persons</string>
+    <string name="enroll_no">Enroll No</string>
+    <string name="up_college">College</string>
+    <string name="up_branch">Branch</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="opt_login">Login</string>
+    <string name="opt_register">Register</string>
+    <string name="userinfo">TextView</string>
+    <string name="title_1">Title</string>
+    <string name="title_2">Title 2</string>
+    <string name="todo_123">TODO</string>
+    <string name="new_visitor_request">New Visitor! Request</string>
+    <string name="request">request</string>
+    <string name="name_1">Name</string>
+    <string name="date_1">Date</string>
+    <string name="new_user_register">New User! Register</string>
+</resources>
+
