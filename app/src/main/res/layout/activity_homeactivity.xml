@@ -149,7 +149,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="4dp"
-                        android:text="Fees"
+                        android:text="@string/activity"
                         android:textSize="24sp"
                         tools:ignore="HardcodedText" />
 
@@ -160,7 +160,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
                         android:contentDescription="@string/logo_fees"
-                        android:src="@drawable/fees" />
+                        android:src="@drawable/activity" />
 
                     <Button
                         android:id="@+id/btn_fees"
@@ -260,7 +260,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
                         android:contentDescription="@string/logo_settings"
-                        android:src="@drawable/settings" />
+                        android:src="@drawable/ok" />
 
                     <Button
                         android:id="@+id/btn_settings"

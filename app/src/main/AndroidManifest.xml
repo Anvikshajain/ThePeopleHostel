@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".mess_timetable"></activity>
         <activity
             android:name=".popupactivity"
             android:theme="@style/AppTheme.CustomTheme" />
@@ -28,7 +29,7 @@
 
         <activity android:name=".navigationactivity" />
         <activity android:name=".profileactivity" />
-        <activity android:name=".feesactivity" />
+        <activity android:name=".activity" />
         <activity android:name=".homeactivity" />
         <activity android:name=".forgotactivity" />
         <activity android:name=".registrationactivity" />

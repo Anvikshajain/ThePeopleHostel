@@ -78,5 +78,22 @@
     <string name="name_1">Name</string>
     <string name="date_1">Date</string>
     <string name="new_user_register">New User! Register</string>
+    <string name="image_activity">TODO</string>
+    <string name="gate_pass">Gate Pass</string>
+    <string name="mess_time_table">Mess Time Table</string>
+    <string name="day">Day</string>
+    <string name="food">Food</string>
+    <string name="mess">Mess</string>
+    <string name="activity">Activity</string>
+
+    <string-array name="time_table">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
 </resources>
 

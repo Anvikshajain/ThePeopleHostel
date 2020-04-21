@@ -2,6 +2,7 @@
   <dictionary name="rockr">
     <words>
       <w>forgotpassword</w>
+      <w>gpass</w>
       <w>loginactivity</w>
       <w>profileactivity</w>
     </words>

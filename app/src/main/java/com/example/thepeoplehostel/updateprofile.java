@@ -2,13 +2,13 @@ package com.example.thepeoplehostel;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,6 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.mikhaellopez.circularimageview.CircularImageView;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -37,7 +38,7 @@ public class updateprofile extends AppCompatActivity {
     private Button save;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
-    private ImageView updateProfilePic;
+    private CircularImageView circularImageView;
     private static int PICK_IMAGE = 123;
     Uri imagePath;
     private StorageReference storageReference;
@@ -49,7 +50,7 @@ public class updateprofile extends AppCompatActivity {
             imagePath = data.getData();
             try {
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imagePath);
-                updateProfilePic.setImageBitmap(bitmap);
+                circularImageView.setImageBitmap(bitmap);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -70,8 +71,11 @@ public class updateprofile extends AppCompatActivity {
         newUserCollege=findViewById(R.id.up_college);
         newUserBranch=findViewById(R.id.up_branch);
         save = findViewById(R.id.btn_upprofile);
-        updateProfilePic = findViewById(R.id.up_profile);
-
+        circularImageView = findViewById(R.id.up_profile);
+        circularImageView.setCircleColor(Color.WHITE);
+        circularImageView.setBorderWidth(5f);
+        circularImageView.setBorderColor(Color.BLACK);
+        circularImageView.setShadowEnable(false);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
@@ -101,7 +105,7 @@ public class updateprofile extends AppCompatActivity {
         storageReference.child(firebaseAuth.getUid()).child("Images/Profile Pic").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).fit().centerCrop().into(updateProfilePic);
+                Picasso.get().load(uri).fit().centerCrop().into(circularImageView);
             }
         });
 
@@ -138,7 +142,7 @@ public class updateprofile extends AppCompatActivity {
             }
         });
 
-        updateProfilePic.setOnClickListener(new View.OnClickListener() {
+        circularImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();

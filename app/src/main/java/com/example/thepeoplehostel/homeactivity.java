@@ -100,7 +100,7 @@ public class homeactivity extends AppCompatActivity {
         fees.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               startActivity(new Intent(homeactivity.this,feesactivity.class));
+               startActivity(new Intent(homeactivity.this,activity.class));
             }
         });
         navigate.setOnClickListener(new View.OnClickListener() {
